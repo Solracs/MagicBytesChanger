@@ -21,15 +21,15 @@ elif len(sys.argv) == 2 and sys.argv[1] == "help":
 elif len(sys.argv) == 3:
     numbers = {'jpg' : [255, 216, 255, 224, 0, 16, 74, 70, 73, 70, 0, 1], 'png' : [137,80,78,71], 'gif' : [71, 73, 70, 56, 55, 97]}
 
-    filename = input("Name of the file: ")
-
+    filename = sys.argv[1]
     try:
         file = open(filename, 'wb')
-        fileExtension = input("Extension: ")
+        fileExtension = sys.argv[2]
         byteNumbers = bytearray(numbers[fileExtension])
 
         file.write(byteNumbers)
         file.close()
+        print("Succes")
     except:
         print("Error. Not such file")
 else:
