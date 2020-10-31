@@ -1,6 +1,8 @@
 # MagicBytesChanger
 Short python script which change the bytes that identify extrensions on files
 
+Don't use this for bad porposes
+
 
 ## Running this file
 $python3 MagicBytes.py
