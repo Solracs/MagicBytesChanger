@@ -5,9 +5,12 @@ Don't use this for bad porposes
 
 
 ## Running this file
+```
 $python3 MagicBytes.py help
-
+```
+```
 $python3 MagicBytes.py yourfile extension
+```
 
 ### EXAMPLE
 $python3 MagicBytes.py myFile.txt gif
