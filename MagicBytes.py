@@ -22,12 +22,24 @@ elif len(sys.argv) == 3:
     numbers = {'jpg' : [255, 216, 255, 224, 0, 16, 74, 70, 73, 70, 0, 1], 'png' : [137,80,78,71], 'gif' : [71, 73, 70, 56, 55, 97]}
 
     filename = sys.argv[1]
+
+    try:
+        file = open(filename, 'r')
+        lines = file.readlines()
+        file.close()
+    except:
+        print("Not such file")
     try:
         file = open(filename, 'wb')
         fileExtension = sys.argv[2]
         byteNumbers = bytearray(numbers[fileExtension])
 
         file.write(byteNumbers)
+        file.close()
+
+        file = open(filename, "a")
+        for line in lines:
+            file.write(line)
         file.close()
         print("Succes")
     except:
