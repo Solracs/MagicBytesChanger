@@ -1,14 +1,14 @@
 #!/usr/bin/python3
 
 
-# This is a simple script that helps you adding the numbers that
+# This is an easy script that helps you adding the numbers that
 # identify the files.
-# Formats jpg, png and gif are currently available
+# Now jpg, png and gif are available
 # More extensions will be added if requested
 
 
 #IMPORTANT
-# running this will remove all the data previously stored in the file
+# running this will remove all the data which was stored on the file
 
 import sys
 
