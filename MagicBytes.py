@@ -38,6 +38,7 @@ elif len(sys.argv) == 3:
         file.close()
 
         file = open(filename, "a")
+        file.write("\n\n\n")
         for line in lines:
             file.write(line)
         file.close()
