@@ -13,4 +13,6 @@ $python3 MagicBytes.py yourfile extension
 ```
 
 ### EXAMPLE
+```
 $python3 MagicBytes.py myFile.txt gif
+```
