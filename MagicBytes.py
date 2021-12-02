@@ -7,9 +7,6 @@
 # More extensions will be added if requested
 
 
-#IMPORTANT
-# running this will remove all the data which was stored on the file
-
 import sys
 
 if len(sys.argv) == 1:
